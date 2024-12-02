@@ -23,9 +23,9 @@ If you haven't already installed Ruby, follow the installation steps provided fo
 
 To run this project, you'll need to install a few Ruby gems (libraries). Navigate to your project directory and run the following command in your terminal:
 
-```bash
-gem install sinatra
-gem install json
+    
+    gem install sinatra
+    gem install json
 
 
 These commands will install:
@@ -36,16 +36,17 @@ Alternatively, you can create a Gemfile for your project and install all depende
 
 1. Create a file named Gemfile in the root directory of your project with the following contents:
 source 'https://rubygems.org'
-
-gem 'sinatra'
-gem 'json'
+    ```bash
+    gem 'sinatra'
+    gem 'json'
 
 2. Install the dependencies by running:
+    ```bash
     bundle install
 
 3.  Set Up Webhook Listener
 Once dependencies are installed, you can start the server by running:
-
+    ```bash
     ruby app.rb
 
 This will start a web server that listens for incoming webhook requests on http://localhost:4567.
